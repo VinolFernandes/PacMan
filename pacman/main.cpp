@@ -178,7 +178,7 @@ Ghost::Ghost(double tx, double ty)
     tx = x;
     ty = y;
     angle = 90.00;
-    speed = max_speed=1;
+    speed = max_speed=0.5;//Change Speed
     color[0] = 1;
     color[1] = 0;
     color[2] = 0;
@@ -711,13 +711,23 @@ void RenderScene()
     sprintf(tmp_str, "Points: %d", points);
     Write(tmp_str);
     glColor3f(1, 0, 0);
-    glRasterPos2f(-5, 18);
+    glRasterPos2f(-3, 18);
     sprintf(tmp_str, "PAC MAN");
     print(tmp_str);
     glColor3f(1, 1, 0);
     glRasterPos2f(-12, 18);
     sprintf(tmp_str, "Lives: %d", lives);
     Write(tmp_str);
+    glRasterPos2f(10,-18);
+    sprintf(tmp_str,"Presented By:");
+    print(tmp_str);
+    glRasterPos2f(12,-20);
+    sprintf(tmp_str,"4NM19CS195  Suhan T Amin");
+    print(tmp_str);
+    glRasterPos2f(12,-22);
+    sprintf(tmp_str,"4NM19CS217 Vinol Fernandes");
+    print(tmp_str);
+
     glutPostRedisplay();
     glutSwapBuffers();
 }
