@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1653301604 source:d:\cprojects\pacman\main.cpp
+	<windows.h>
+	<ctype.h>
+	<GL/glut.h>
+	<math.h>
+	<stdio.h>
+
+1653226278 c:\mingw\include\gl\glut.h
+	<windows.h>
+	<GL/gl.h>
+	<GL/glu.h>
+
